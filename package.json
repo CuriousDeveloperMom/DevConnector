@@ -4,9 +4,10 @@
   "description": "Social network for developers",
   "main": "server.js",
   "scripts": {
-    "start": "node dist/app.js",
-    "dev": "nodemon src/app.ts",
-    "build": "tsc -p ."
+    "start": "node server.js",
+    "dev": "nodemon server.ts",
+    "build": "tsc -p .",
+    "server": "nodemon server"
   },
   "author": "Priti Solanki",
   "license": "MIT",
