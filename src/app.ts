@@ -5,8 +5,8 @@ const app: Application  = express();
 const PORT = 5000;
 
 app.get('/', (req: Request, res: Response, next: NextFunction) => {
-    console.log('TEST!');
-    res.send('Hello from HomePage!');
+    console.log('TEST!!!');
+    res.send('Hello from HomePage!!!');
 })
 
 app.listen(PORT, () => console.log(`Server Running on Port : http://localhost:${PORT}`));
