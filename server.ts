@@ -10,8 +10,7 @@ connectDB();
 //Init Middleware
 app.use(express.json()); //{extended: false}
 
-
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (req: any, res: any) => {
   console.log('TEST!!!');
   res.send('Hello from Express Server (DevConnector)!!');
 });
