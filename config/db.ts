@@ -1,8 +1,8 @@
 //const mongoose = require('mongoose');
 //const config = require('config');
 //const db = config.get('mongoURI');
- import mongoose from 'mongoose';
- import config from 'config';
+import mongoose from 'mongoose';
+import config from 'config';
 const db: string = config.get('mongoURI');
 
 const connectDB = async () => {
@@ -10,6 +10,7 @@ const connectDB = async () => {
     await mongoose.connect(db, {
       // useNewUrlParser: true,
       // useCreateIndex: true,
+      // useFindAndModify: false
     });
     console.log('MongoDB Connected...');
   } catch (err: any) {
@@ -17,13 +18,9 @@ const connectDB = async () => {
     // Exit process with failure
     process.exit(1);
   }
-}
+};
 
 module.exports = connectDB;
-
-
-
-
 
 // const mongoose = require('mongoose');
 // const config = require('config');
